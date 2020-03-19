@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(255, 238, 2);
+}
+
+body.Home{ 
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+body.Home::after {
+    content: "";
+    background: url('img/bgimg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+.header{
+    top: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+h1{
+    font-family: Calibri Light;
+    font-size: 50px;
+    position: absolute;
+}
+
+h2{
+    margin-top: 60px;
+    font-size: 25px;
+    position: absolute;
+    font-family: Calibri Light;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 15%;
+    position: absolute;
+    background-color: rgba(255, 138, 37, 0.7);
+    border-radius: 5px;
+}
+
+a{
+    transition: transform .2s;
+    text-decoration: none;
+    margin: 10px 0px 20px 0px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    display: block;
+}
+
+a:hover{
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 550px){
+    nav{
+        flex-direction: row;
+        width: 100%;
+        height: 15%;
+        justify-content: space-around;
+    }    
+
+}
+
+div.main{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 80%;
+    float: inline-end;
+    top: 300px;
+}
+
+img.features1, img.features2{
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+img.features3{
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+}
+
+div > h3{
+    color: white;
+    font-family: Calibri Light;
+}
+
+div.content1, div.content2, div.content3{
+    display: flex;
+    flex-direction: column;
+}
+
+h1.about{
+    color: white;
+    bottom: 50px;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+}
